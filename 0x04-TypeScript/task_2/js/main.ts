@@ -48,7 +48,7 @@ function createEmployee(salary: number | string): Director | Teacher {
 console.log(createEmployee(400)); // Teacher
 console.log(createEmployee(1000)); // Director
 
-function isDirector(employee: Director | Teacher): employee is Director {
+export function isDirector(employee: Director | Teacher): employee is Director {
     return employee instanceof Director;
 }
 
@@ -60,7 +60,7 @@ function executeWork(employee: Director | Teacher): string {
     }
 }
 
-export { Director, Teacher, createEmployee, executeWork, isDirector };
+// export { Director, Teacher, createEmployee, executeWork, isDirector };
 
 console.log(executeWork(createEmployee(200))); // Teacher tasks
 console.log(executeWork(createEmployee(1000))); // Director tasks
