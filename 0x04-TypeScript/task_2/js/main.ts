@@ -49,7 +49,7 @@ console.log(createEmployee(400)); // Teacher
 console.log(createEmployee(1000)); // Director
 
 export function IsDirector(employee: Director | Teacher): employee is Director {
-    return (employee as Director).workDirectorTasks !== undefined;
+    return employee instanceof Director;
 }
 
 function executeWork(employee: Director | Teacher): string {
