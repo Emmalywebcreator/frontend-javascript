@@ -10,9 +10,9 @@ namespace Subjects {
 
     getAvailableTeacher(): string {
         if (!this.teacher.experienceTeachingC) {
-            return 'No available teacher';
+            return `No available teacher`;
         }
-        return
+        return `Available Teacher: ${this.teacher.firstName}`;
     }   
     }
 }
