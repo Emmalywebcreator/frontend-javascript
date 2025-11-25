@@ -1,6 +1,6 @@
 namespace Subjects {
     export interface Teacher {
-        experienceTeachingJave?: number;
+        experienceTeachingJava?: number;
     }
 
     export class Java extends Subject {
@@ -9,7 +9,7 @@ namespace Subjects {
         }
 
         getAvailableTeacher(): string {
-            if (!this.teacher.experienceTeachingJave) {
+            if (!this.teacher.experienceTeachingJava) {
                 return 'No available teacher';
             }
             return `Available Teacher: ${this.teacher.firstName}`;
