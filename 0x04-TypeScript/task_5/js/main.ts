@@ -8,7 +8,7 @@ export interface MinorCredits {
   __minorBrand: "minor";
 }
 
-export function sumMajorCredits(subjects1:MajorCredits, subjects2:MajorCredits): MajorCredits {
+export function sumMajorCredits(subjects1: MajorCredits, subjects2: MajorCredits): MajorCredits {
     return { credits: subjects1.credits + subjects2.credits, __majorBrand: "major" };
 }
 
